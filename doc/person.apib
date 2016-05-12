@@ -1,0 +1,80 @@
+
+FORMAT: 1A
+
+# person API
+
+Write an overall API discription.
+
+# people action [/people]
+
+Write a discription.
+
+## Create person [POST]
+
+Write a [POST] discription.
+
++ Request people (application/json; charset=utf-8)
+    + Attributes
+        + name: MyString (string)
+        + age: 1 (number)
+        + admin: false (boolean)
+        
++ Response 201 (application/json; charset=utf-8)
+    + Attributes (people)
+
+## Get people [GET]
+
+Write a [GET] discription.
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (array)
+        + (people)
+        + (people)
+
+# person action [/people/{id}]
+
+Write a discription.
+
++ Parameters
+    + id: `1` (enum[string]) - The ID of the desired person.
+        + Members
+            + `1`
+            + `2`
+            + `3`
+
+## Get person [GET]
+
+Write a [GET] discription.
+
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (people)
+
+## Update person [PUT]
+
+Write a [PUT] discription.
+
++ Request people (application/json; charset=utf-8)
+    + Attributes
+        + name: MyString (string)
+        + age: 1 (number)
+        + admin: false (boolean)
+        
++ Response 200 (application/json; charset=utf-8)
+    + Attributes (people)
+
+## Delete person [DELETE]
+
+Write a [DELETE] discription.
+
++ Response 204
+
+# Data Structures
+
+## people (object)
+
++ id: 1 (number) - Id
++ name: MyString (string)
++ age: 1 (number)
++ admin: false (boolean)
++ created_at: `2000-01-01 00:00:00` (string) - CreatedTime
++ updated_at: `2000-01-01 00:00:00` (string) - UpdatedTime
